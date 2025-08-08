@@ -83,5 +83,9 @@ EOF
     ;;
 # ends the case statement	
 esac
+
+# just to hold user till enter press
+read hold
+
 # exit command closes
 exit
