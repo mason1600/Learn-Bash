@@ -32,6 +32,9 @@ EOF
 # this calls the function you dont actually type flower in this example its just a flower from the may program
 flower
 
+# holds user till enter press just in case not run from an already open terminal it wont do the open close so fast thing were you cant see it 
+read hold
+
 # last but not least an exit command to close
 exit
 
