@@ -20,7 +20,9 @@ else
     # Function does not exist, handle the situation (e.g., print an error)
     echo "Error: $VAR does not exist."
 fi
+
 # another read command to simply hold user till enter press
 read hold
+
 # exit code to exit
 exit
