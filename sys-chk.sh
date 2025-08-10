@@ -9,4 +9,6 @@ df -h
 echo "uptime:"
 uptime
 
+read hold
+
 exit
