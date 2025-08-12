@@ -12,7 +12,7 @@ echo 'alright we are almost there now enter another number to add together'
 # read command gathers second number as a variable
 read SECOND_NUMBER
 
-# echo command echos here is your number and performs arithmatic truth tests on numbers for a total
+# echo command echos here is your number and performs arithmatic evaluation on numbers for a total
 echo 'here is your number' $(($FIRST_NUMBER + $SECOND_NUMBER))
 
 # echo command tells user hitting enter closes app or ends
