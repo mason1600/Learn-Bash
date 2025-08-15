@@ -97,6 +97,11 @@ sleep 1
 animation
 animation
 animation
+# This is a little trick to keep the user from accidentally pressing ''enter'' during the animation.
+# This would Give blank input to the next read. Witch would be bad. So 1-3 traps should be safe.
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
+read -t .1 -n 1 dummytrap
 # just a read command to hold the user till enter is pressed
 read ani
 # exit command used at end to properly exit
