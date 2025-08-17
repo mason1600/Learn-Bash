@@ -5,7 +5,7 @@ echo "function time plz type cool to call a function"
 
 # this creates function 'cool'
 cool(){ 
-echo "you a fat"
+echo "you a cat"
 }
 
 
