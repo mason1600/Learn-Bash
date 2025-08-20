@@ -330,9 +330,10 @@ echo hello $FIRST_NAME $LAST_NAME
 read hold
 }
 ex9(){
+count=1
 # Now using one of my favorite simple loops a 'while true'; do loop and 5 echo commands i make my best anon face lol
 while true; do 
-
+((count += 1))
  # this command called clear will clear the screen every iteration of the loop
  clear
 
@@ -402,7 +403,9 @@ EOF
 
  echo '  OMOUS ' 
  sleep .3 
- 
+ if [[ $count -ge 10 ]]; then
+    break
+    fi
  # Do Not Forget To Add DONE at the end of your loop or prepare for head scratching and confusion
  done
 }
