@@ -214,7 +214,7 @@ ex4(){
 flower(){
 
 # echo command prints words to user
-echo "hello if you would like to see a pretty artistic flower then type flower"
+echo "hello this is a pretty flower"
 
 # cat command follow by two less than symbols will print out what ever is between the two 'EOF's end of file symbol
 	cat << EOF 
@@ -320,13 +320,13 @@ done
 }
 ex8(){
 # echo command asks user for first name
-echo what is your name first?
+echo "what is your first name?"
 
 # read command used to gather first name
 read FIRST_NAME
 
 # another echo command used to ask user last name
-echo what is your last name?
+echo "what is your last name?"
 
 # another read command used to gather last name
 read LAST_NAME
