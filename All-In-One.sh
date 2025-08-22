@@ -403,6 +403,7 @@ EOF
 
  echo '  OMOUS ' 
  sleep .3 
+ # This little check here using break is used to break free from the test loop after 10 counts
  if [[ $count -ge 10 ]]; then
     break
     fi
