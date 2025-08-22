@@ -12,7 +12,7 @@ animation(){
 ...t....................
 EOF
 # sleep for 1 second to get a slight pause between frames
-sleep 1
+sleep .3
         cat << EOF
 
    o
@@ -20,21 +20,21 @@ sleep 1
    t
 .......................
 EOF
-sleep 1
+sleep .3
         cat << EOF
 
     o
    -X-
 ....t....................
 EOF
-sleep 1
+sleep .3
         cat << EOF
 
    o
   -X-
 ...t....................
 EOF
-sleep 1
+sleep .3
         cat << EOF
 
    o
@@ -42,21 +42,21 @@ sleep 1
    t
 .......................
 EOF
-sleep 1
+sleep .3
         cat << EOF
 
     o
    -X-
 ....t....................
 EOF
-sleep 1
+sleep .3
         cat << EOF
 
    o
   -X-
 ...t....................
 EOF
-sleep 1
+sleep .3
         cat << EOF
 
    o
@@ -64,21 +64,21 @@ sleep 1
    t
 .......................
 EOF
-sleep 1
+sleep .3
         cat << EOF
 
     o
    -X-
 ....t....................
 EOF
-sleep 1
+sleep .3
         cat << EOF
 
    o
   -X-
 ...t....................
 EOF
-sleep 1
+sleep .3
         cat << EOF
 
    o
@@ -86,14 +86,14 @@ sleep 1
    t
 .......................
 EOF
-sleep 1
+sleep .3
         cat << EOF
 
     o
    -X-
 ....t....................
 EOF
-sleep 1
+sleep .3
 }
 # i call the animation 3 times to make sure it goes for a long time since this is a example
 animation
@@ -104,6 +104,8 @@ animation
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
+# Echo Command to tell user to hit enter to return to menu
+echo "Hitting Enter Will Return You To Selection Menu"
 # just a read command to hold the user till enter is pressed
 read ani
 }
@@ -113,7 +115,8 @@ LIST=(one two three four five)
 
 # to call all the words use the '@' symbol to get the first word use '0' to get the second use '1' etc...
 echo "${LIST[@]}"
-
+# Echo Command to tell user to hit enter to return to menu
+echo "Hitting Enter Will Return You To Selection Menu"
 # read command just used to hold user prompt open for the example
 read hold
 }
@@ -201,7 +204,8 @@ EOF
     ;;
 # ends the case statement	
 esac
-
+# Echo Command to tell user to hit enter to return to menu
+echo "Hitting Enter Will Return You To Selection Menu"
 # just to hold user till enter press
 read hold
 }
@@ -237,7 +241,8 @@ EOF
 
 # this calls the function you dont actually type flower in this example its just a flower from the may program
 flower
-
+# Echo Command to tell user to hit enter to return to menu
+echo "Hitting Enter Will Return You To Selection Menu"
 # holds user till enter press just in case not run from an already open terminal it wont do the open close so fast thing were you cant see it 
 read hold
 }
@@ -262,7 +267,8 @@ else
     # Function does not exist, handle the situation (e.g., print an error)
     echo "Error: $VAR does not exist."
 fi
-
+# Echo Command to tell user to hit enter to return to menu
+echo "Hitting Enter Will Return You To Selection Menu"
 # another read command to simply hold user till enter press
 read hold
 }
@@ -275,7 +281,8 @@ LAST_NAME=bob
 
 # echo command then says 'hello' followed by the string values of variables FIRST_NAME and LAST_NAME containg "bill" and "bob"
 echo hello $FIRST_NAME $LAST_NAME
-
+# Echo Command to tell user to hit enter to return to menu
+echo "Hitting Enter Will Return You To Selection Menu"
 #read command just holds to pause in case you open it directly from the script it wont do the open so fast and close you cant see it thingy
 read hold
 }
@@ -299,7 +306,8 @@ elif [[ $REPLY == poptart ]]; then
 else
 	echo "$REPLY is not a valid response"
 fi
-
+# Echo Command to tell user to hit enter to return to menu
+echo "Hitting Enter Will Return You To Selection Menu"
 # Read command to hold till press of enter
 read hold
 break
@@ -325,7 +333,8 @@ read LAST_NAME
 
 # echo command then says 'hello' with first and last name
 echo hello $FIRST_NAME $LAST_NAME
-
+# Echo Command to tell user to hit enter to return to menu
+echo "Hitting Enter Will Return You To Selection Menu"
 # read command used to hold user till done pressing enter to move one
 read hold
 }
@@ -428,7 +437,8 @@ echo 'here is your number' $(($FIRST_NUMBER + $SECOND_NUMBER))
 
 # echo command tells user hitting enter closes app or ends
 echo 'hitting enter will close or end'
-
+# Echo Command to tell user to hit enter to return to menu
+echo "Hitting Enter Will Return You To Selection Menu"
 # read command holds user till enter press
 read HOLD
 }
@@ -446,7 +456,8 @@ df -h
 # echo command and uptime command show system uptime info
 echo "uptime:"
 uptime
-
+# Echo Command to tell user to hit enter to return to menu
+echo "Hitting Enter Will Return You To Selection Menu"
 # read command holds user till done by pressing enter
 read hold
 }
