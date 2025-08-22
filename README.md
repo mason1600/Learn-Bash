@@ -1,4 +1,4 @@
-All-In-One.sh Is A Program That Has All The Example Scripts!
+All-In-One.sh Is A Interactive Program That Has All The Example Scripts!
 
 These Are Example Scripts, With Lots Of Things You Will Encounter When First Starting To Learn Bash Like....
 
