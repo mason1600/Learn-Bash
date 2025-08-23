@@ -310,6 +310,7 @@ fi
 echo "Hitting Enter Will Return You To Selection Menu"
 # Read command to hold till press of enter
 read hold
+# This break command is used to let the user return to the menu from inside this loop
 break
 # And finally a DONE command at the end of a loop
 done
@@ -461,7 +462,7 @@ echo "Hitting Enter Will Return You To Selection Menu"
 # read command holds user till done by pressing enter
 read hold
 }
-
+# This is the main menu made with echo commands
 echo "Hello This Is A All-In-One Example Script Program"
 echo "Type A Example You Want From 1-11"
 echo "1 is the Animation.sh"
@@ -475,7 +476,9 @@ echo "8 is the Interactive-Shell.sh"
 echo "9 is the Loop-Example.sh"
 echo "10 is the My-First-Calc-Program.sh"
 echo "11 is the System-Check.sh"
+# This read command takes in the choice
 read choice
+# This is a case statement that houses the examples 1-11 as 'Functions'.
 case $choice in
     1)
         echo "Animation"
@@ -525,5 +528,5 @@ case $choice in
         echo "invalid choice"
     ;;
 esac
-
+# Finallay dont forget esac above and done below to end the case and loop
 done
