@@ -1,6 +1,8 @@
 #!/bin/bash
 
+# This begins a simple loop for the menu selection screen to keep returning
 while true; do
+# This is example one as a function
 ex1(){ 
 # function named animation is created to be called when ever animation is called
 animation(){
