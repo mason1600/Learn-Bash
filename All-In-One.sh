@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# This begins a simple loop for the menu selection screen to keep returning
+# This begins a simple loop for the menu selection screen to keep returning.
 while true; do
 
-# This is example one as a function
+# This is example one as a function.
 ex1(){ 
-# function named animation is created to be called when ever animation is called
+# Function named animation is created to be called when ever animation is called.
 animation(){
-# cat command followed by two lessthan symbols will print what ever is inbetween the two EOFs stands for end of file
+# Cat command followed by two less-than symbols will print what ever is inbetween the two EOFs stands for end of file.
 	cat << EOF
 
    o
