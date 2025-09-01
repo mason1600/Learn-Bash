@@ -120,11 +120,11 @@ LIST=(one two three four five)
 echo "${LIST[@]}"
 # Echo Command to tell user to hit enter to return to menu.
 echo "Hitting Enter Will Return You To Selection Menu"
-# read command just used to hold user prompt open for the example
+# Read command just used to hold user prompt open for the example.
 read hold
 }
 ex3(){
-# echo command prints words to screen
+# Echo command prints words to screen.
 echo "hi testing case time give me a variable like pie or bob or cheese"
 
 # sleep command
