@@ -127,7 +127,7 @@ ex3(){
 # Echo command prints words to screen.
 echo "hi testing case time give me a variable like pie or bob or cheese"
 
-# sleep command
+# Sleep command.
 sleep .7
 
 # echo command again
