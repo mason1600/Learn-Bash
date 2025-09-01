@@ -98,7 +98,7 @@ sleep .3
 EOF
 sleep .3
 }
-# i call the animation 3 times to make sure it goes for a long time since this is a example
+# I call the animation 3 times to make sure it goes for a long time since this is a example.
 animation
 animation
 animation
@@ -107,18 +107,18 @@ animation
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
 read -t .1 -n 1 dummytrap
-# Echo Command to tell user to hit enter to return to menu
+# Echo Command to tell user to hit enter to return to menu.
 echo "Hitting Enter Will Return You To Selection Menu"
-# just a read command to hold the user till enter is pressed
+# Just a read command to hold the user till enter is pressed.
 read ani
 }
 ex2(){
-# this is an example of an array , a variable directly followed by '='that is directly followed by '(' and closed with a ')' with a space between words in the '()'
+# This is an example of an array , a variable directly followed by '='that is directly followed by '(' and closed with a ')' with a space between words in the '()'
 LIST=(one two three four five)
 
-# to call all the words use the '@' symbol to get the first word use '0' to get the second use '1' etc...
+# To call all the words use the '@' symbol to get the first word use '0' to get the second use '1' etc...
 echo "${LIST[@]}"
-# Echo Command to tell user to hit enter to return to menu
+# Echo Command to tell user to hit enter to return to menu.
 echo "Hitting Enter Will Return You To Selection Menu"
 # read command just used to hold user prompt open for the example
 read hold
