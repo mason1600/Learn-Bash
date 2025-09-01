@@ -130,10 +130,10 @@ echo "hi testing case time give me a variable like pie or bob or cheese"
 # Sleep command.
 sleep .7
 
-# echo command again
+# Echo command again.
 echo "pie"
 
-# another sleep pause
+# Another sleep pause.
 sleep .8
 
 # echo command again
