@@ -112,6 +112,7 @@ echo "Hitting Enter Will Return You To Selection Menu"
 # Just a read command to hold the user till enter is pressed.
 read ani
 }
+# This is example 2 as a function.
 ex2(){
 # This is an example of an array , a variable directly followed by '='that is directly followed by '(' and closed with a ')' with a space between words in the '()'
 LIST=(one two three four five)
@@ -123,6 +124,7 @@ echo "Hitting Enter Will Return You To Selection Menu"
 # Read command just used to hold user prompt open for the example.
 read hold
 }
+# This is example 3 as a function.
 ex3(){
 # Echo command prints words to screen.
 echo "hi testing case time give me a variable like pie or bob or cheese"
