@@ -279,6 +279,7 @@ echo "Hitting Enter Will Return You To Selection Menu"
 # another read command to simply hold user till enter press
 read hold
 }
+# This is example 6 as a function.
 ex6(){
 # creates a variable named FIRST_NAME and then adds the value bill to its memory
 FIRST_NAME=bill
