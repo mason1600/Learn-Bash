@@ -252,6 +252,7 @@ echo "Hitting Enter Will Return You To Selection Menu"
 # holds user till enter press just in case not run from an already open terminal it wont do the open close so fast thing were you cant see it 
 read hold
 }
+# This is example 5 as a function.
 ex5(){
 # this is a echo command to prompt user to type cool
 echo "function time plz type cool to call a function"
