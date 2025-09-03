@@ -214,6 +214,7 @@ echo "Hitting Enter Will Return You To Selection Menu"
 # just to hold user till enter press
 read hold
 }
+# This is example 4 as a function.
 ex4(){
 # this is another example to show what a function could look like or do
 flower(){
