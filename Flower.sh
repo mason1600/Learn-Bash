@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# this is another example to show what a function could look like or do
+# This is another example to show what a function could look like or do.
 flower(){
 
-# echo command prints words to user
+# Echo command prints words to user.
 echo "hello if you would like to see a pretty artistic flower then type flower"
 
-# cat command follow by two less than symbols will print out what ever is between the two 'EOF's end of file symbol
+# Cat command follow by two less than symbols will print out what ever is between the two 'EOF's end of file symbol.
 	cat << EOF 
 ---------------------------------
 ........m......m.......m........
@@ -26,15 +26,15 @@ echo "hello if you would like to see a pretty artistic flower then type flower"
 i picked this one fresh just for you
 EOF
 
-# this curly bracket here is the close to the function
+# This curly bracket here is the close to the function.
 }
 
-# this calls the function you dont actually type flower in this example its just a flower from the may program
+# This calls the function you dont actually type flower in this example its just a flower from the may program.
 flower
 
-# holds user till enter press just in case not run from an already open terminal it wont do the open close so fast thing were you cant see it 
+# Holds user till enter press just in case not run from an already open terminal it wont do the open close so fast thing were you cant see it. 
 read hold
 
-# last but not least an exit command to close
+# Last but not least an exit command to close.
 exit
 
