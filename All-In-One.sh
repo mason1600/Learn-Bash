@@ -114,7 +114,7 @@ read ani
 }
 # This is example 2 as a function.
 ex2(){
-# This is an example of an array , a variable directly followed by '='that is directly followed by '(' and closed with a ')' with a space between words in the '()'
+# This is an example of an array , a variable directly followed by '='that is directly followed by '(' and closed with a ')' with a space between words in the '()'.
 LIST=(one two three four five)
 
 # To call all the words use the '@' symbol to get the first word use '0' to get the second use '1' etc...
@@ -138,28 +138,28 @@ echo "pie"
 # Another sleep pause.
 sleep .8
 
-# echo command again
+# Echo command again.
 echo "bob"
 
-# pause using sleep
+# Pause using sleep.
 sleep .9
 
-# prints cheese to screen
+# Prints cheese to screen.
 echo "cheese"
 
-# reads a variable into memory called VAR given by user
+# Reads a variable into memory called VAR given by user.
 read VAR
 
-# a case statement using VAR variable given by user
+# A case statement using VAR variable given by user.
 case $VAR in
 
-# a choice here called pie ended by')'
+# A choice here called pie ended by')'.
    pie)
   
-   # witch then does this command echo
+   # Witch then does this command echo.
 		echo "yes thats pie great"
  
-  # the double semis is used between to seperate choices
+  # The double semis is used between to seperate choices.
 	;;
 	
     bob)
@@ -171,21 +171,21 @@ case $VAR in
 		echo "oh yaa thats smelly cheese"
 	;;
  
- # the asterisk handles all non options given or empty choice 
+ # The asterisk handles all non options given or empty choice.
 	*)
 		echo "$VAR is not a thingy i asked you to type"
 	;;
 
- # ends a case statement 'esac'
+ # Ends a case statement 'esac'.
 esac
 
-# echo command telling user info
+# Echo command telling user info.
 echo "hi lets do another pic red blue or green"
 
-# reads another variable
+# Reads another variable.
 read VAR2
 
-# another example case statement .etc....etc..
+# Another example case statement .etc....etc..
 case $VAR2 in 
     red)
         echo "yes red"
@@ -207,22 +207,22 @@ EOF
     *)
         echo "$VAR2 is not a selection"
     ;;
-# ends the case statement	
+# Ends the case statement.
 esac
-# Echo Command to tell user to hit enter to return to menu
+# Echo Command to tell user to hit enter to return to menu.
 echo "Hitting Enter Will Return You To Selection Menu"
-# just to hold user till enter press
+# Just to hold user till enter press.
 read hold
 }
 # This is example 4 as a function.
 ex4(){
-# this is another example to show what a function could look like or do
+# This is another example to show what a function could look like or do.
 flower(){
 
-# echo command prints words to user
+# Echo command prints words to user.
 echo "hello this is a pretty flower"
 
-# cat command follow by two less than symbols will print out what ever is between the two 'EOF's end of file symbol
+# Cat command followed by two less-than symbols will print out what ever is in-between the two 'EOF's end of file symbol.
 	cat << EOF 
 ---------------------------------
 ........m......m.......m........
@@ -242,69 +242,70 @@ echo "hello this is a pretty flower"
 i picked this one fresh just for you
 EOF
 
-# this curly bracket here is the close to the function
+# This curly bracket here is the close to the function.
 }
 
-# this calls the function you dont actually type flower in this example its just a flower from the may program
+# This calls the function you dont actually type flower in this example its just a flower from the may program.
 flower
-# Echo Command to tell user to hit enter to return to menu
+# Echo Command to tell user to hit enter to return to menu.
 echo "Hitting Enter Will Return You To Selection Menu"
-# holds user till enter press just in case not run from an already open terminal it wont do the open close so fast thing were you cant see it 
+# Holds user till enter press just in case not run from an already open terminal it wont do the open close so fast thing were you cant see it.
 read hold
 }
 # This is example 5 as a function.
 ex5(){
-# this is a echo command to prompt user to type cool
+# This is a echo command to prompt user to type cool.
 echo "function time plz type cool to call a function"
 
-# this creates function 'cool'
+# This creates function 'cool'.
 cool(){ 
 echo "you a cat"
 }
 
 
-# reads a variable
+# Reads a variable.
 read VAR
 
-# now this is a handy little peice of code here that checks if the variables file descripter is equal to that of a function string
+# Now this is a handy little peice of code here that checks if the variables file descripter is equal to that of a function string.
 if [[ $(type -t $VAR) == function ]]; then
-    # and if so then Function exists, call it
+    # And if so then Function exists, call it.
     cool
 else
-    # Function does not exist, handle the situation (e.g., print an error)
+    # Function does not exist, handle the situation (e.g., print an error).
     echo "Error: $VAR does not exist."
 fi
-# Echo Command to tell user to hit enter to return to menu
+# Echo Command to tell user to hit enter to return to menu.
 echo "Hitting Enter Will Return You To Selection Menu"
-# another read command to simply hold user till enter press
+# Another read command to simply hold user till enter press.
 read hold
 }
 # This is example 6 as a function.
 ex6(){
-# creates a variable named FIRST_NAME and then adds the value bill to its memory
+# Creates a variable named FIRST_NAME and then adds the value bill to its memory.
 FIRST_NAME=bill
 
-# creates a variable named LAST_NAME and then adds the value bob to its memory
+# Creates a variable named LAST_NAME and then adds the value bob to its memory.
 LAST_NAME=bob
 
-# echo command then says 'hello' followed by the string values of variables FIRST_NAME and LAST_NAME containg "bill" and "bob"
+# Echo command then says 'hello' followed by the string values of variables FIRST_NAME and LAST_NAME containg "bill" and "bob".
 echo hello $FIRST_NAME $LAST_NAME
-# Echo Command to tell user to hit enter to return to menu
+# Echo Command to tell user to hit enter to return to menu.
 echo "Hitting Enter Will Return You To Selection Menu"
-#read command just holds to pause in case you open it directly from the script it wont do the open so fast and close you cant see it thingy
+# Read command just holds to pause in case you open it directly from the script it wont do the open so fast and close you cant see it thingy.
 read hold
 }
+# This is example 7 as a function.
 ex7(){
-# This loop is just to make the example easy for me to show you so you dont have to open and close the script for each choice while learning its not the main point here
+# This loop is just to make the example easy for me to show you so you dont have to open and close the script for each choice while learning its not the main point here.
 while true; do
 
-# This is a echo command to tell the user info
+# This is a echo command to tell the user info.
 echo 'hello welcome to the if,then,elif,else,fi example script to showcase conditional statements'
 
-# This is a read command that will prompt the user to enter a value and save it to the REPLY variable
+# This is a read command that will prompt the user to enter a value and save it to the REPLY variable.
 read -r -p  "im gathering a value assigned to what is going to be the variable REPLY give me a word please that is either icecream, chicken, or poptart"
 
-# Now this is what i wanted to show you the beginning of the if then elif else fi conditional statement
+# Now this is what i wanted to show you the beginning of the if then elif else fi conditional statement.
 if [[ $REPLY == icecream ]]; then
 	echo 'awsome you typed icecream yumm'
 elif [[ $REPLY == chicken ]]; then
@@ -314,55 +315,57 @@ elif [[ $REPLY == poptart ]]; then
 else
 	echo "$REPLY is not a valid response"
 fi
-# Echo Command to tell user to hit enter to return to menu
+# Echo Command to tell user to hit enter to return to menu.
 echo "Hitting Enter Will Return You To Selection Menu"
-# Read command to hold till press of enter
+# Read command to hold till press of enter.
 read hold
-# This break command is used to let the user return to the menu from inside this loop
+# This break command is used to let the user return to the menu from inside this loop.
 break
-# And finally a DONE command at the end of a loop
+# And finally a DONE command at the end of a loop.
 done
 
-# I have a good phrase to help you remember fi esac and done used at the end of a if or case or loop 
-# And that is "once you 'FI'nd your hacky 'ESAC'y then you can be 'DONE'"
-# Its supposed to sound like "once you find your hacky sacky then you can be done"
+# I have a good phrase to help you remember fi esac and done used at the end of a if or case or loop.
+# And that is "once you 'FI'nd your hacky 'ESAC'y then you can be 'DONE'".
+# Its supposed to sound like "once you find your hacky sacky then you can be done".
 }
+# This is example 8 as a function.
 ex8(){
-# echo command asks user for first name
+# Echo command asks user for first name.
 echo "what is your first name?"
 
-# read command used to gather first name
+# Read command used to gather first name.
 read FIRST_NAME
 
-# another echo command used to ask user last name
+# Another echo command used to ask user last name.
 echo "what is your last name?"
 
-# another read command used to gather last name
+# Another read command used to gather last name.
 read LAST_NAME
 
-# echo command then says 'hello' with first and last name
+# Echo command then says 'hello' with first and last name.
 echo hello $FIRST_NAME $LAST_NAME
-# Echo Command to tell user to hit enter to return to menu
+# Echo Command to tell user to hit enter to return to menu.
 echo "Hitting Enter Will Return You To Selection Menu"
-# read command used to hold user till done pressing enter to move one
+# Read command used to hold user till done pressing enter to move one.
 read hold
 }
+# This is example 9 as a function.
 ex9(){
 count=1
-# Now using one of my favorite simple loops a 'while true'; do loop and 5 echo commands i make my best anon face lol
+# Now using one of my favorite simple loops a 'while true'; do loop and 5 echo commands i make my best anon face lol.
 while true; do 
 ((count += 1))
- # this command called clear will clear the screen every iteration of the loop
+ # This command called clear will clear the screen every iteration of the loop.
  clear
 
-# These are the 5 echo commands talked about in the first comment
+# These are the 5 echo commands talked about in the first comment.
 echo ' ``_  _``  '
  echo ' <0><0> '
  echo '       '
  echo ' __/\__ '
 echo '   |   '
 
-# The cat command followed by two less than symbols is used to print everything inbetween the two EOF words standing for 'end of file'
+# The cat command followed by two less-than symbols is used to print everything in-between the two EOF words standing for 'end of file'.
  cat << EOF        
                    d<---rain drops           
   d        d         
@@ -370,10 +373,10 @@ echo '   |   '
   d  -X-    d
 ......t......................,
 EOF
-# Echo command used again
+# Echo command used again.
  echo '  OMOUS ' 
- sleep .3        # The sleep command pauses for however long you want i used .3 of a second here for example
- clear                    # The clear command again
+ sleep .3        # The sleep command pauses for however long you want i used .3 of a second here for example.
+ clear                    # The clear command again.
  echo '``_  _``  '
 echo '  <-><-> '
  echo '       '
@@ -421,56 +424,58 @@ EOF
 
  echo '  OMOUS ' 
  sleep .3 
- # This little check here using break is used to break free from the test loop after 10 counts
+ # This little check here using break is used to break free from the test loop after 10 counts.
  if [[ $count -ge 10 ]]; then
     break
     fi
- # Do Not Forget To Add DONE at the end of your loop or prepare for head scratching and confusion
+ # Do Not Forget To Add DONE at the end of your loop or prepare for head scratching and confusion.
  done
 }
+# This is example 10 as a function.
 ex10(){
-# echo command asks user to give a number
+# Echo command asks user to give a number.
 echo 'hello this is my first simple program a simple addition calc plz enter first number to add'
 
-# read command gathers first number as a variable
+# Read command gathers first number as a variable.
 read FIRST_NUMBER
 
-# echo command asks for another number to be added together
+# Echo command asks for another number to be added together.
 echo 'alright we are almost there now enter another number to add together'
 
-# read command gathers second number as a variable
+# Read command gathers second number as a variable.
 read SECOND_NUMBER
 
-# echo command echos here is your number and performs arithmatic evaluation on numbers for a total
+# Echo command echos here is your number and performs arithmatic evaluation on numbers for a total.
 echo 'here is your number' $(($FIRST_NUMBER + $SECOND_NUMBER))
 
-# echo command tells user hitting enter closes app or ends
+# Echo command tells user hitting enter closes app or ends.
 echo 'hitting enter will close or end'
-# Echo Command to tell user to hit enter to return to menu
+# Echo Command to tell user to hit enter to return to menu.
 echo "Hitting Enter Will Return You To Selection Menu"
-# read command holds user till enter press
+# Read command holds user till enter press.
 read HOLD
 }
+# This is example 11 as a function.
 ex11(){
-# check-system
+# Check-System.
 
-# echo command and free command show memory info
+# Echo command and free command show memory info.
 echo "mem:"
 free -h
 
-# echo command and df command show disk info
+# Echo command and df command show disk info.
 echo "disk usage:"
 df -h
 
-# echo command and uptime command show system uptime info
+# Echo command and uptime command show system uptime info.
 echo "uptime:"
 uptime
-# Echo Command to tell user to hit enter to return to menu
+# Echo Command to tell user to hit enter to return to menu.
 echo "Hitting Enter Will Return You To Selection Menu"
-# read command holds user till done by pressing enter
+# Read command holds user till done by pressing enter.
 read hold
 }
-# This is the main menu made with echo commands
+# This is the main menu made with echo commands.
 echo "Hello This Is A All-In-One Example Script Program"
 echo "Type A Example You Want From 1-11"
 echo "1 is the Animation.sh"
@@ -484,7 +489,7 @@ echo "8 is the Interactive-Shell.sh"
 echo "9 is the Loop-Example.sh"
 echo "10 is the My-First-Calc-Program.sh"
 echo "11 is the System-Check.sh"
-# This read command takes in the choice
+# This read command takes in the choice.
 read choice
 # This is a case statement that houses the examples 1-11 as 'Functions'.
 case $choice in
@@ -536,5 +541,5 @@ case $choice in
         echo "invalid choice"
     ;;
 esac
-# Finallay dont forget esac above and done below to end the case and loop
+# Finallay dont forget esac above and done below to end the case and loop.
 done
