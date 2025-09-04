@@ -7,7 +7,7 @@ while true; do
 ex1(){ 
 # Function named animation is created to be called when ever animation is called.
 animation(){
-# Cat command followed by two less-than symbols will print what ever is inbetween the two EOFs stands for end of file.
+# Cat command followed by two less-than symbols will print what ever is in-between the two EOFs stands for end of file.
 	cat << EOF
 
    o
