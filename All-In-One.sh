@@ -185,7 +185,7 @@ echo "hi lets do another pic red blue or green"
 # Reads another variable.
 read VAR2
 
-# Another example case statement .etc....etc..
+# Another example case statement .etc....etc...
 case $VAR2 in 
     red)
         echo "yes red"
