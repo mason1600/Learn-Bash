@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# The script All-In-One.sh was created by mason1600 on GitHub released with the license GNU General Public License v3.0
+# This Bash Script Is For Those Who Are New To Bash And Want To Learn More, Enjoy.
+
 # This begins a simple loop for the menu selection screen to keep returning.
 while true; do
 
