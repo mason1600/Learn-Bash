@@ -17,7 +17,7 @@ animation(){
   -X-
 ...t....................
 EOF
-# Sleep for 1 second to get a slight pause between frames.
+# Sleep for .3 second to get a slight pause between frames.
 sleep .3
         cat << EOF
 
