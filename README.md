@@ -22,3 +22,6 @@ Etc...etc....
 
 Also Filled With Comments To Help New Bash Users UnderStand.
 <img width="1920" height="1080" alt="Screenshot from 2025-10-02 13-24-29" src="https://github.com/user-attachments/assets/48ece8fb-ac34-4d21-b41c-7223d9519371" />
+
+![Screenshot_20251002_191637_Termux](https://github.com/user-attachments/assets/582e102d-9ec3-4f2e-a327-9fe44670ae19)
+aslo runs in termux
